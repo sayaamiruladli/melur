@@ -16,18 +16,14 @@
         
         if ($_POST["katalaluan"] === $_POST["sahkatalaluan"]) {
        
-        $sql = "INSERT INTO user (nama_pengguna,kata_laluan,sah_kata_laluan) VALUES ('$namapengguna','$katalaluan','$sahkatalaluan')";
+	// tadi adli check zyra punya table salah
+        $sql = "INSERT INTO user (nama_penuh,password) VALUES ('$namapengguna','$katalaluan')";
         //echo $sql;
         $result = $con->query($sql) or die(mysql_error());
         
        
-            
-        
+          
         header("location:login.php");
-           
-             
-        
-            echo "Succesfully Registered !";
         
             } else {
             
