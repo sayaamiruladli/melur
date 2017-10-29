@@ -194,7 +194,7 @@ input[type=text]:focus {
 					                   <td><?php echo $row['nama_syarikat'];?></td>
                                        <td><?php echo $row['alamat_surat_menyurat'];?></td>
 					                   <td class="center"><button class="btn success"><a href="display.php">Butiran</a></button></td>
-                                    </tr>';
+                                    </tr>
 			                 <?php endwhile;?>
                                         
                                         
