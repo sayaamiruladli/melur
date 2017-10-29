@@ -187,7 +187,7 @@ input[type=text]:focus {
                                     </thead>
                                     <tbody>
                                         
-                    <?php while($row = mysqli_fetch_array($search_result)):?>   
+                    <?php while($row = mysqli_fetch_array($query)):?>   
                                     <tr>
 					                   <td><?php echo $row['id'];?></td>
 					                   <td><?php echo $row['nama_penuh'];?></td>
